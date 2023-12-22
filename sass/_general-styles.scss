@@ -1,0 +1,110 @@
+/*Обнуление всех стилей и прочего*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a :focus, a :active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input ::-ms-clear{display: none;}
+button{cursor: pointer;}
+button ::-moz-focus-inner{padding: 0; border: 0;}
+a,a :visited{text-decoration: none;}
+a :hover{text-decoration: none;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body {
+    color: var(--general-color);
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6; /* 160% */
+}
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.title {
+    font-family: "Libre Baskerville";
+    letter-spacing: 1.2px;
+}
+.button-white {
+    font-family: "Public Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+    letter-spacing: 0.02px;
+    color: var(--white-color);
+    border-radius: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background-color: inherit;
+}
+.button-green {
+    color: var(--button-color);
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+    letter-spacing: 0.02px;
+    background-color: inherit;
+}
+.hidden {
+    overflow: hidden
+}
+
+// Плавний ховер
+// transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// box-shadow: 0px 13px 19px rgba(0,0,0,.07);
+
+//Гарний ховер для посилань
+// &::after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: -3px;
+    //     width: 0;
+    //     height: 2px; /* Высота линии */
+    //     background-color: var(--title-color); /* Цвет подчеркивания при исчезании линии*/
+    //     transition: width 0.5s; /* Время эффекта */
+    //     }
+    //     &:hover::after {
+    //     content: "";
+    //     width: 100%;
+    //     display: block;
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -3px;
+    //     height: 2px; /* Высота линии */
+    //     background-color: var(--title-color); /* Цвет подчеркивания при появлении линии*/
+    //     transition: width 0.5s;  /* Время эффекта */
+    //     }

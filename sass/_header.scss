@@ -1,0 +1,73 @@
+.header {
+    position: relative;
+    z-index: 10;
+}
+.header__container {
+    position: relative;
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.header__logo-icon {
+    width: 110px;
+    height: 26px;
+}
+.header__list {
+    display: flex;
+    column-gap: 50px;
+}
+.header__link {
+    position: relative;
+    font-family: "Public Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.23; /* 123.077% */
+    color: var(--white-color);
+    &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px; /* Высота линии */
+            background-color: var(--white-color); /* Цвет подчеркивания при исчезании линии*/
+            transition: width 0.5s; /* Время эффекта */
+            }
+            &:hover::after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px; /* Высота линии */
+            background-color: var(--white-color); /* Цвет подчеркивания при появлении линии*/
+            transition: width 0.5s;  /* Время эффекта */
+            }
+}
+.header__burger {
+    display: none;
+}
+.header__burger-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--white-color);
+}
+@media screen and (max-width: 991.98px) {
+    .header__list {
+        column-gap: 15px;
+    }
+}
+@media screen and (max-width: 549.98px) {
+    .header__nav {
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+    }
+}
