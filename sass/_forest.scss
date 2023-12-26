@@ -1,0 +1,46 @@
+.forest {
+    background-color: #001414;
+}
+.forest__body {
+    display: flex;
+    align-items: center;
+}
+.forest__img-left {
+    max-width: 33.333%;
+    max-height: 680px;
+    object-fit: contain;
+}
+.forest__content {
+    margin: 0 auto;
+    width: 33.333%;
+}
+.forest__title {
+    margin-bottom: 21px;
+    font-size: 22px;
+    line-height: 1; /* 100% */
+    color: var(--white-color);
+}
+.forest__text {
+    max-width: 542px;
+    color: var(--white-color);
+}
+.forest__img-right {
+    max-width: 33.333%;
+    max-height: 680px;
+    object-fit: contain;
+}
+@media screen and (max-width: 991.98px) {
+    .forest__container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .forest__content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .forest__img-right,
+    .forest__img-left {
+        display: none;
+    }
+}
