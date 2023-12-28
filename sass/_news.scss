@@ -94,6 +94,7 @@
     }
     .news__title {
         font-size: 24px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 479.98px) {
@@ -104,5 +105,11 @@
     }
     .news__list {
         justify-content: center;
+    }
+    .news__item {
+        width: 260px;
+    }
+    .news__link > span {
+        width: 260px;
     }
 }
